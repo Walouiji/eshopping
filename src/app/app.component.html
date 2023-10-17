@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+	<!-- <mat-icon>menu</mat-icon> -->
+	<span>Nom de l'entreprise</span>
+</mat-toolbar>
+<div>
+	<mat-drawer-container class="drawer">
+		<mat-drawer mode="side" opened="">
+			<mat-list>
+				<mat-list-item>Accueil</mat-list-item>
+				<mat-divider />
+				<mat-list-item>Produits</mat-list-item>
+				<mat-divider />
+				<mat-list-item>A propos</mat-list-item>
+				<mat-divider />
+				<mat-list-item>Compte</mat-list-item>
+			</mat-list>
+		</mat-drawer>
+		<mat-drawer-content>
+			<router-outlet />
+		</mat-drawer-content>
+	</mat-drawer-container>
+</div>
